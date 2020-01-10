@@ -41,3 +41,4 @@ rl.question("Please enter the first String : ", answer1 => {
 });
 
 module.exports = isAnagram;
+

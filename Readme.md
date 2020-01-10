@@ -83,6 +83,35 @@ console.log(Plane.set_num_of_wheels)
 
 ```
 
+or
+
+```
+
+class Vehicle {
+    constructor(name, price) {
+        this.name = name
+        this.price = price
+    }
+
+}
+
+class Car extends Vehicle {
+    constructor(name, price) {
+        super(name, price);
+    }
+}
+
+class Plane extends Vehicle {
+    constructor(name, price) {
+        super(name, price);
+    }
+}
+
+let c = new Car('CAR', 3033);
+let p = new Plane('PLANE', 2222);
+
+```
+
 # Write a video player application with ‘Play’, ‘Forward’ , ‘Rewind’ functionalities. Please write pseudocode for this program and explain the design pattern you will use to develop these three functionalities.
 
 Here The Observer Pattern is used to solve the Problem . We use the Event Observer pattern here When some button is pressed by the User.
