@@ -121,6 +121,7 @@ code : public/index.html
 Run:
 
 > npm i
+
 > node index.js
 
 Demo : http://localhost:5000/
