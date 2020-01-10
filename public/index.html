@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>JS VIDEO PLAYER</h1>
+        <video width="700px" controls id="video">
+          <source src="sunset.mp4" type="video/mp4" />
+        </video>
+        <br />
+        <button class="btn" id="play">
+          play
+        </button>
+        <button class="btn" id="pause">
+          pause
+        </button>
+        <button class="btn" id="rewind">
+          rewind
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+    let video = document.getElementById("video");
+    let play = document.getElementById("play");
+    let pause = document.getElementById("pause");
+    let rewind = document.getElementById("rewind");
+
+    let paused = false;
+
+    console.log(video);
+
+    play.addEventListener("click", () => {
+      video.play();
+    });
+
+    pause.addEventListener("click", () => {
+      if (paused) {
+        video.play();
+        paused = false;
+      } else {
+        video.pause();
+        paused = true;
+      }
+    });
+    rewind.addEventListener("click", () => {
+      video.currentTime = 0;
+      video.play();
+    });
+  </script>
+
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"
+  ></script>
+</html>
