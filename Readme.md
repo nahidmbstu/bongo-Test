@@ -42,6 +42,8 @@ rl.question("Please enter the first String : ", answer1 => {
 
 ```
 
+test : Test Folder
+
 # Explain the design pattern used in following:
 
 ```
@@ -53,12 +55,10 @@ interface Vehicle {
 
 ```
 
-Here We Can Create Car and Plane class by using the interface given by Vehicle Factory can provide a generic interface for creating objects, where we can specify the type of factory object we wish to be created.
-
 a) Explain how can you use the pattern to create car and plane class?
 b) Use a different design pattern for this solution.
 
-There is concept of interface in Javascript but we can use the Constructor pattern to create new car and plane object.
+There is No concept of interface in Javascript but we can use the Constructor pattern to create new car and plane object.
 
 ```
 
@@ -88,4 +88,5 @@ console.log(Plane.set_num_of_wheels)
 Here The Observer Pattern is used to solve the Problem . We use the Event Observer pattern here When some button is pressed by the User.
 
 code : public/index.html
+
 Demo : http://localhost:5000/
