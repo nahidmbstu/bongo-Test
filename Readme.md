@@ -83,7 +83,7 @@ console.log(Plane.set_num_of_wheels)
 
 ```
 
-or
+or classes
 
 ```
 
@@ -117,5 +117,10 @@ let p = new Plane('PLANE', 2222);
 Here The Observer Pattern is used to solve the Problem . We use the Event Observer pattern here When some button is pressed by the User.
 
 code : public/index.html
+
+Run:
+
+> npm i
+> node index.js
 
 Demo : http://localhost:5000/
